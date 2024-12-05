@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría de Colas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            padding: 14px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .section h3 {
+            color: #4CAF50;
+        }
+        .section p {
+            font-size: 16px;
+        }
+        .section a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Teoría de Colas</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="programacion_dinamica.html">Programación Dinámica</a></li>
+        <li><a href="programacion_no_lineal.html">Programación no Lineal</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2>Temas de la Teoría de Colas</h2>
+
+    <div class="section">
+        <h3>Modelo de línea de espera con un servidor y con llegadas Poisson y tiempos de servicio exponenciales</h3>
+        <p>Este modelo describe un sistema de colas en el que las llegadas de clientes siguen un proceso de Poisson, y el tiempo de servicio tiene una distribución exponencial. En este sistema, un solo servidor gestiona las llegadas.</p>
+        <a href="modelo_un_servidor_poisson_exponencial.html">Programa</a>
+    </div>
+
+    <div class="section">
+        <h3>Modelo de línea de espera de múltiples servidores con llegadas Poisson y tiempos de servicio exponenciales</h3>
+        <p>En este modelo, hay varios servidores que atienden a los clientes que llegan siguiendo un proceso de Poisson. El tiempo de servicio es exponencial, y este modelo es más eficiente cuando hay una mayor cantidad de clientes.</p>
+        <a href="modelo_multiples_servidores_poisson_exponencial.html">Programa</a>
+    </div>
+
+    <div class="section">
+        <h3>Esquema de nacimiento y muerte en sistema de colas (teorema de Little)</h3>
+        <p>Este esquema usa un proceso estocástico de nacimiento y muerte, y se basa en el teorema de Little, que establece una relación entre el número promedio de clientes en el sistema, el tiempo promedio que pasa un cliente en el sistema y la tasa de llegada.</p>
+        <a href="esquema_nacimiento_muerte.html">Programa</a>
+    </div>
+
+    <div class="section">
+        <h3>Modelo de línea de espera con un servidor con llegadas Poisson y tiempos de servicio arbitrarios</h3>
+        <p>En este caso, las llegadas siguen un proceso de Poisson, pero los tiempos de servicio no siguen una distribución exponencial, sino que son arbitrarios, lo que añade más complejidad al análisis del sistema.</p>
+        <a href="modelo_un_servidor_poisson_arbitrario.html">Programa</a>
+    </div>
+
+    <div class="section">
+        <h3>Modelo de múltiples servidores con llegadas Poisson, tiempos de servicio arbitrarios y sin línea de espera</h3>
+        <p>Este modelo describe un sistema de múltiples servidores con llegadas de clientes según un proceso de Poisson. El tiempo de servicio es arbitrario y no se usa una línea de espera, lo que significa que los clientes deben ser atendidos de inmediato o se van.</p>
+        <a href="modelo_multiples_servidores_poisson_arbitrario.html">Programa</a>
+    </div>
+
+    <div class="section">
+        <h3>Modelos de línea de espera con fuentes finitas</h3>
+        <p>Este modelo considera que la cantidad de clientes posibles en el sistema es finita. Los modelos de fuentes finitas son útiles cuando se tiene una cantidad limitada de recursos o clientes potenciales.</p>
+        <a href="modelos_fuentes_finitas.html">Programa</a>
+    </div>
+</div>
+
+</body>
+</html>
